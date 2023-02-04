@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Fontuna';
+    src: local('Fontuna Light'), local('Fontuna-Light'),
+        url('Fontuna-Light.woff2') format('woff2'),
+        url('Fontuna-Light.woff') format('woff'),
+        url('Fontuna-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
