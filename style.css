@@ -1,0 +1,660 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://allfont.ru/allfont.css?fonts=easy-street-alt-eps");
+@font-face {
+  font-family: "Fontuna";
+  src: local("Fontuna-Light"), local("Fontuna-Light"),
+    url("../Fontuna-Light.woff2") format("woff2"),
+    url("../Fontuna-Light.woff") format("woff"),
+    url("../Fontuna-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1;
+  font-size: 16px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body._lock {
+  overflow: hidden;
+}
+
+.wraper {
+  min-height: 100%;
+}
+
+.page {
+  padding: 100px 0 0 0;
+}
+
+.page-section {
+  padding: 30px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.page-section-1 {
+  background: url(img/фон\ для\ прайса\ перманентного\ макияжа.jpg) 0 0/100%
+    100% no-repeat;
+  min-height: 628px;
+}
+
+.page-title {
+  font-family: "Fontuna";
+  padding: 13% 0 0 18%;
+  font-size: 40px;
+  margin: 0 0 20px 0;
+}
+
+.page-text1 {
+  font-family: "Fontuna";
+  padding: 0 0 8% 18%;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.btn {
+  box-shadow: 10px 10px 15px, inset 10px 10px 15px rgb(227, 193, 193);
+  border-radius: 30px;
+  margin-left: 18%;
+  padding: 0 25px 0;
+  min-height: 50px;
+  background: #874d4d;
+}
+
+.sub-btn {
+  font-family: "Fontuna";
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.page-section-2 {
+  min-height: 628px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-text2 {
+  font-family: "Fontuna";
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.mastermak {
+  height: 520px;
+  width: 40%;
+  margin: 0 90px 0 0;
+  align-self: center;
+  background: url(img/mastertsertif.PNG) 0 0/100% 100% no-repeat;
+}
+
+.title {
+  font-family: "Fontuna";
+  text-align: center;
+  align-self: center;
+  height: 100%;
+  margin: 0 0 0 90px;
+}
+
+.page-sub-title {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+}
+
+.page-title-text {
+  text-align: center;
+  font-size: 26px;
+  margin: 0 0 30px 0;
+}
+
+.page-section-3 {
+  height: 100%;
+  background: #f3e8e2;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Точки (булиты) */
+.slider .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.slider .slick-dots li.slick-active button {
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+.slider {
+  min-width: 0;
+  position: relative;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url(img/buttonleft.png) 0 0/100% no-repeat;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url(img/buttonright.png) 0 0/100% no-repeat;
+}
+
+.slider-item {
+  text-align: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: #e1cfc5;
+}
+
+.header-conteiner {
+  max-width: 1200px;
+  padding: 0 25px 0 10px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 70px;
+}
+
+.header-logo {
+  background: url(img/logo.png) 50%/200px 115px no-repeat;
+  position: relative;
+  z-index: 5;
+  width: 200px;
+  height: 100px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu-list > li {
+  position: relative;
+  margin: 0 0 0 20px;
+}
+
+.menu-link {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.contact_form {
+  padding: 100px 0 0 0;
+}
+
+.form_section {
+  padding: 30px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.form-section-1 {
+  background: url(img/fon-contact.jpg) 0 0/100% 100% no-repeat;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 70vh;
+  border: 0;
+}
+
+.copyright h4 {
+  color: blue;
+  padding: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.developer h3 {
+  color: blue;
+  padding: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact-container {
+  background: url(img/fon-contact.jpg) 0 0/100% 100% no-repeat;
+  margin: 100px 0 0 0;
+  height: 100%;
+  width: 100%;
+}
+
+.content-bgfon {
+  position: relative;
+  margin: 100px 0 0 0;
+  height: 600px;
+  width: 60%;
+}
+
+.content {
+  display: flex;
+  align-content: space-between;
+}
+
+.contetn-link {
+  margin: 100px 0 0 0;
+  width: 55%;
+}
+
+.link > li > a {
+  display: flex;
+  align-items: center;
+  font-family: "Easy Street Alt EPS";
+  font-style: italic;
+  font-size: 34px;
+  color: rgb(146, 49, 102);
+}
+
+.link > li > a > img {
+  padding: 50px 30px 50px 100px;
+  height: 35vh;
+}
+
+.link > li > h2 {
+  font-family: "Easy Street Alt EPS";
+  font-style: italic;
+  padding: 30px 0 0 0;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 600;
+  color: rgb(146, 49, 102);
+}
+
+@media (min-width: 767px) {
+  .menu-list {
+    display: flex;
+    align-items: center;
+  }
+  .menu-list > li {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 1200px) {
+  .wraper {
+    max-width: 970px;
+  }
+  .header {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .page-title {
+    font-family: "Fontuna";
+    padding: 18% 0 0 10%;
+    font-size: 40px;
+    margin: 0 0 20px 0;
+  }
+  .page-text1 {
+    font-family: "Fontuna";
+    padding: 0 0 18% 10%;
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .title {
+    font-family: "Fontuna";
+    align-self: center;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .page-sub-title {
+    font-size: 30px;
+    margin: 0;
+  }
+  .mastermak {
+    width: 75%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .wraper {
+    max-width: none;
+  }
+  .header {
+    max-width: none;
+  }
+  .page-title {
+    font-family: "Fontuna";
+    padding: 18% 0 0 0;
+    font-size: 30px;
+    margin: 0 0 20px 0;
+  }
+  .page-text1 {
+    font-family: "Fontuna";
+    padding: 0 0 18% 0;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .btn {
+    box-shadow: 10px 10px 15px, inset 10px 10px 15px rgb(233, 215, 215);
+    border-radius: 30px;
+    padding-left: 6%;
+    min-height: 50px;
+    background: #874d4d;
+  }
+  .page-section-2 {
+    flex-direction: column;
+  }
+  .title {
+    font-family: "Fontuna";
+    text-align: center;
+    align-self: center;
+    height: 100%;
+    margin: 0 auto;
+    margin: 0 0 20px;
+  }
+  .page-sub-title {
+    font-size: 30px;
+    margin: 0;
+  }
+  .mastermak {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .menu-icon {
+    z-index: 5;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .menu-icon span,
+  .menu-icon::before,
+  .menu-icon::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #000;
+  }
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+  }
+  .menu-icon::before {
+    top: 0;
+  }
+  .menu-icon::after {
+    bottom: 0;
+  }
+  .menu-icon span {
+    top: 50%;
+    transform: scale(1) translate(0px, -50%);
+  }
+  .menu-icon._active span {
+    transform: scale(0) translate(0px, -50%);
+  }
+  .menu-icon._active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+  }
+  .menu-icon._active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+  }
+  .page-section-1 {
+    background: url(img/фон\ для\ прайса\ перманентного\ макияжа.jpg) 100% /
+      cover no-repeat;
+  }
+  .menu-body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 100px 30px 30px 30px;
+    transition: left 0.3s ease 0s;
+    overflow: auto;
+  }
+  .menu-body._active {
+    left: 0;
+  }
+  .menu-body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100px;
+    background: #e1cfc5;
+    z-index: 2;
+  }
+  .menu-list > li {
+    margin: 20px 0 30px 0;
+  }
+  .menu-list > li:last-child {
+    margin-bottom: 0;
+  }
+  .menu-list {
+    font-size: 24px;
+  }
+  .slider-item img {
+    height: 350px;
+  }
+}
+@media (max-width: 450px) {
+  .btn {
+    box-shadow: 10px 10px 15px, inset 10px 10px 15px rgb(227, 193, 193);
+    margin: 85% 0 0 65%;
+    border-radius: 30px;
+    min-height: 50px;
+    background: #874d4d;
+  }
+  .page-title {
+    font-family: "Fontuna";
+    margin: 0 auto;
+    padding: 0;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+  }
+  .page-text1 {
+    position: absolute;
+    bottom: 0px;
+    font-family: "Fontuna";
+    padding: 0 5% 18% 0;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .title {
+    font-family: "Fontuna";
+    text-align: center;
+    align-self: center;
+    height: 100%;
+  }
+  .page-section-2 {
+    min-height: 480px;
+  }
+  .mastermak {
+    height: 350px;
+    width: 100%;
+  }
+  .slider-item img {
+    height: 250px;
+  }
+  .contact-container {
+    background: url(img/fon-contact.jpg) 0 0/100% 100% no-repeat;
+    margin: 100px 0 0 0;
+    height: 350px;
+    width: 100%;
+  }
+  .link > li > a {
+    display: flex;
+    align-items: center;
+    font-family: "Easy Street Alt EPS";
+    font-style: italic;
+    font-size: 18px;
+    color: rgb(146, 49, 102);
+  }
+  .link > li > a > img {
+    padding: 50px 30px 50px 40px;
+    height: 23vh;
+  }
+  .contetn_link {
+    margin: 0;
+    width: 100%;
+  }
+  .contetn_link li:first-child {
+    width: 50%;
+  }
+  .contetn_link li:nth-child(2) {
+    width: 50%;
+  }
+  .contetn_link li:last-child {
+    padding: 50px 0 0 0;
+    font-size: 35px;
+    text-align: center;
+    width: 100%;
+    color: #830e1d;
+    font-family: "Easy Street Alt EPS";
+    font-style: italic;
+  }
+}
+@media (max-width: 375px) {
+  .mastermak {
+    height: 300px;
+    width: 100%;
+  }
+  .contact_container {
+    background: url(img/fon-contact.jpg) 0 0/100% 100% no-repeat;
+    margin: 100px 0 0 0;
+    height: 300px;
+    width: 100%;
+  }
+  .contetn_link {
+    margin: 0;
+    width: 100%;
+  }
+} /*# sourceMappingURL=style.css.map */
